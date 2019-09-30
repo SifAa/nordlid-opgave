@@ -1,0 +1,143 @@
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #2a697b;
+}
+small {
+    font-size: 80%;
+}
+
+h1, h2, h4 {
+    font-weight: 300;
+}
+
+
+/* Carousel caption centered */
+#carousel {
+    width: 100vw;
+}
+.carousel-caption {
+    bottom: 0%;
+} 
+.carousel-caption h1 {
+    font-size: 4vw;
+}
+
+
+/* Form button */
+.btn-pink {
+    background-color: #FF108B;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 80%;
+    color: #ffffff;
+    padding: .5rem 4.7rem;
+}
+.btn-pink:hover {
+    background-color: #cd0171;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Form input */
+.form-border {
+    border: 0px;
+    border-radius: 0;
+    border-bottom: 1px solid #304a5f;
+    font-weight: 300;
+    color: #304a5f;
+    padding: 0;
+}
+.form-border:focus {
+    border-bottom: 1px solid #304a5f;
+}
+label {
+    margin: 0;
+    font-size: 80%;
+}
+
+/* Form checkbox */
+.checkbox-xl .custom-control-label::before, 
+.checkbox-xl .custom-control-label::after {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0%;
+  border-color: #304a5f;
+  cursor: pointer;
+}
+.custom-control-label {
+    padding-top: 5px;
+    padding-left: 15px;
+    line-height: 80%;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow:none;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:#FF108B;
+    border-color: #FF108B;
+  }
+
+/* Form validering */
+.invalid-feedback {
+    color: #FF108B;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #FF108B;
+    background-image: none;
+}
+.custom-control-input.is-invalid~.custom-control-label, .was-validated .custom-control-input:invalid~.custom-control-label {
+    color: #FF108B;
+}
+.form-control.is-valid, .was-validated .form-control:valid{
+    border-color: #304a5f;
+    background-image: none;
+}
+.custom-control-input.is-valid~.custom-control-label, .was-validated .custom-control-input:valid~.custom-control-label {
+    color: #2a697b;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #FF108B;
+}
+
+
+/* ikon kasse */
+#iconbox {
+    background-color: #2a697b;
+    color: #f1f3f5;
+    padding: 40px 0px;
+    width: 100vw;
+}
+
+
+/* Footer */
+footer {
+    background-color: #313131;
+    padding: 40px 0px;
+}
+
+
+
+
+
+
+
+
+
+/* iPhone plus portrait mode */
+@media only screen and (min-width: 400px) {
+    .carousel-caption {
+        bottom: 10%;
+    } 
+  }
+
+/* Tablets and desktops */
+@media only screen and (min-width: 568px) {
+    .carousel-caption {
+        bottom: 15%;
+    } 
+  }
